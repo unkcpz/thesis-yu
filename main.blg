@@ -7,10 +7,9 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Database file #1: main.bib
 Warning--Require address: bollobas2001random
-Warning--Require citedate: luce1949method
-Warning--Require citedate: watts1998smallworld
 Warning--Require citedate: gilbert1959random
 Warning--Require citedate: erdos1959random
+Warning--Require citedate: luce1949method
 Warning--Require citedate: solomonoff1951connectivity
 Warning--Require journal: albert1999diameter
 Warning--Require citedate: albert1999diameter
@@ -22,6 +21,7 @@ Warning--Require year: grossman2011erdos
 Warning--Require address: leighton1992introduction
 Warning--Require year: QUAGGA
 Warning--Require address: varia2010architecting
+Warning--Require citedate: watts1998smallworld
 You've used 77 entries,
             3107 wiz_defined-function locations,
             1183 strings with 18504 characters,

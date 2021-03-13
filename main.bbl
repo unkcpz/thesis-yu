@@ -24,6 +24,13 @@
 \providecommand{\bibdate}[1]{#1}
 \providecommand{\biburl}[1]{\newline\url{#1}}
 
+\bibitem{gyarmati2010scafida}
+\bibauthor{GYARMATI L\@, {Trinh} T}\@. \bibtitle{Scafida: A scale-free network
+  inspired data center architecture}\bibmark{[J]}\@. \bibjournal{ACM SIGCOMM
+  Computer Communication Review}\@, \bibyear{2010}\@,
+  \bibvolume{40}\bibnumber{(5)}\thinspace{}\textnormal{:
+  }\bibpages{4\thinspace{}\textnormal{--}\thinspace{}12}\@.
+
 \bibitem{newman2006structure}
 \bibauthor{NEWMAN M\@, BARAB{\'A}SI A-L\@, WATTS D~J}\@. \bibbooktitle{The
   structure and dynamics of networks}\bibmark{[M]}\@.
@@ -43,68 +50,6 @@
   York}\thinspace{}\textnormal{: }\bibpublisher{ACM}\@,
   \bibyear{2000}\thinspace{}\textnormal{:
   }\bibpages{171\thinspace{}\textnormal{--}\thinspace{}180}\@.
-
-\bibitem{bollobas2001random}
-\bibauthor{BOLLOB{\'A}S B}\@. \bibbooktitle{Random
-  graphs\thinspace{}\textnormal{: }Vol~73}\bibmark{[M]}\@.
-  \bibaddress{[S.l.]}\thinspace{}\textnormal{: }\bibpublisher{Cambridge
-  university press}\@, \bibyear{2001}\@.
-
-\bibitem{barabasi1999emergence}
-\bibauthor{BARAB{\'A}SI A-L\@, ALBERT R}\@. \bibtitle{Emergence of scaling in
-  random networks}\bibmark{[J]}\@. \bibjournal{science}\@, \bibyear{1999}\@,
-  \bibvolume{286}\bibnumber{(5439)}\thinspace{}\textnormal{:
-  }\bibpages{509\thinspace{}\textnormal{--}\thinspace{}512}\@.
-
-\bibitem{erdHos1961strength}
-\bibauthor{ERD{\H{O}}S P\@, RENYI A}\@. \bibtitle{On the strength of
-  connectedness of a random graph}\bibmark{[J]}\@. \bibjournal{Acta Mathematica
-  Hungarica}\@, \bibyear{1961}\@,
-  \bibvolume{12}\bibnumber{(1)}\thinspace{}\textnormal{:
-  }\bibpages{261\thinspace{}\textnormal{--}\thinspace{}267}\@.
-
-\bibitem{NVIDIAGRID}
-\bibauthor{{NVIDIA Corporation}}\@. \bibtitle{Nvidia GRID}\bibmark{[EB/OL]}\@.
-  \bibyear{2013} \bibcitedate{[2013-03-10]}\@.
-  \newline\url{http://www.nvidia.com/object/cloud-gaming.html}\@.
-
-\bibitem{marconi1909nobel}
-\bibauthor{MARCONI G}\@. \bibtitle{Wireless telegraphic
-  communication}\bibmark{[G]} //\thinspace{}\bibbooktitle{Nobel Prize
-  address}\@. \bibyear{1909}\@.
-
-\bibitem{barabasi2003linked}
-\bibauthor{BARAB{\'A}SI A-L}\@. \bibbooktitle{Linked: How Everything is
-  Connected to Everything Else and What It Means for Business, Science, and
-  Everyday Life}\bibmark{[M]}\@. \bibaddress{New York}\thinspace{}\textnormal{:
-  }\bibpublisher{Plume}\@, \bibyear{2003}\@.
-
-\bibitem{pool1978}
-\bibauthor{{de Sola Pool} I\@, KOCHEN M}\@. \bibtitle{Contacts and
-  influence}\bibmark{[J]}\@. \bibjournal{Social Networks}\@, \bibyear{1978}\@,
-  \bibvolume{1}\thinspace{}\textnormal{:
-  }\bibpages{5\thinspace{}\textnormal{--}\thinspace{}51}\@.
-
-\bibitem{luce1949method}
-\bibauthor{LUCE R~D\@, PERRY A~D}\@. \bibtitle{A method of matrix analysis of
-  group structure}\bibmark{[J/OL]}\@. \bibjournal{Psychometrika}\@,
-  \bibyear{1949}\@, \bibvolume{14}\bibnumber{(2)}\thinspace{}\textnormal{:
-  }\bibpages{95\thinspace{}\textnormal{--}\thinspace{}116}\@.
-  \newline\url{http://dx.doi.org/10.1007/BF02289146}\@.
-
-\bibitem{watts1998smallworld}
-\bibauthor{WATTS D\@, STROGATZ S}\@. \bibtitle{Collective dynamics of
-  ``small-world'' networks}\bibmark{[J/OL]}\@. \bibjournal{Nature}\@,
-  \bibyear{1998}\@, \bibvolume{393}\thinspace{}\textnormal{:
-  }\bibpages{440\thinspace{}\textnormal{--}\thinspace{}442}\@.
-  \newline\url{http://dx.doi.org/10.1038/30918}\@.
-
-\bibitem{gyarmati2010scafida}
-\bibauthor{GYARMATI L\@, {Trinh} T}\@. \bibtitle{Scafida: A scale-free network
-  inspired data center architecture}\bibmark{[J]}\@. \bibjournal{ACM SIGCOMM
-  Computer Communication Review}\@, \bibyear{2010}\@,
-  \bibvolume{40}\bibnumber{(5)}\thinspace{}\textnormal{:
-  }\bibpages{4\thinspace{}\textnormal{--}\thinspace{}12}\@.
 
 \bibitem{molloy1995critical}
 \bibauthor{MOLLOY M\@, REED B}\@. \bibtitle{A critical point for random graphs
@@ -126,6 +71,19 @@
   \bibjournal{Journal of Combinatorial Theory, Series A}\@, \bibyear{1978}\@,
   \bibvolume{24}\bibnumber{(3)}\thinspace{}\textnormal{:
   }\bibpages{296\thinspace{}\textnormal{--}\thinspace{}307}\@.
+
+\bibitem{bollobas2001random}
+\bibauthor{BOLLOB{\'A}S B}\@. \bibbooktitle{Random
+  graphs\thinspace{}\textnormal{: }Vol~73}\bibmark{[M]}\@.
+  \bibaddress{[S.l.]}\thinspace{}\textnormal{: }\bibpublisher{Cambridge
+  university press}\@, \bibyear{2001}\@.
+
+\bibitem{erdHos1961strength}
+\bibauthor{ERD{\H{O}}S P\@, RENYI A}\@. \bibtitle{On the strength of
+  connectedness of a random graph}\bibmark{[J]}\@. \bibjournal{Acta Mathematica
+  Hungarica}\@, \bibyear{1961}\@,
+  \bibvolume{12}\bibnumber{(1)}\thinspace{}\textnormal{:
+  }\bibpages{261\thinspace{}\textnormal{--}\thinspace{}267}\@.
 
 \bibitem{erdos1960additive}
 \bibauthor{ERD{\"O}S P\@, R{\'E}NYI A}\@. \bibtitle{Additive properties of
@@ -225,6 +183,12 @@
   \bibvolume{159}\bibnumber{(3810)}\thinspace{}\textnormal{:
   }\bibpages{56\thinspace{}\textnormal{--}\thinspace{}63}\@.
 
+\bibitem{barabasi1999emergence}
+\bibauthor{BARAB{\'A}SI A-L\@, ALBERT R}\@. \bibtitle{Emergence of scaling in
+  random networks}\bibmark{[J]}\@. \bibjournal{science}\@, \bibyear{1999}\@,
+  \bibvolume{286}\bibnumber{(5439)}\thinspace{}\textnormal{:
+  }\bibpages{509\thinspace{}\textnormal{--}\thinspace{}512}\@.
+
 \bibitem{gilbert1959random}
 \bibauthor{GILBERT E~N}\@. \bibtitle{Random Graphs}\bibmark{[J/OL]}\@.
   \bibjournal{Annals of Mathematical Statistics}\@, \bibyear{1959}\@,
@@ -238,6 +202,13 @@
   \bibyear{1959}\@, \bibvolume{6}\thinspace{}\textnormal{:
   }\bibpages{290\thinspace{}\textnormal{--}\thinspace{}297}\@.
   \newline\url{http://www.renyi.hu/~p_erdos/1959-11.pdf}\@.
+
+\bibitem{luce1949method}
+\bibauthor{LUCE R~D\@, PERRY A~D}\@. \bibtitle{A method of matrix analysis of
+  group structure}\bibmark{[J/OL]}\@. \bibjournal{Psychometrika}\@,
+  \bibyear{1949}\@, \bibvolume{14}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{95\thinspace{}\textnormal{--}\thinspace{}116}\@.
+  \newline\url{http://dx.doi.org/10.1007/BF02289146}\@.
 
 \bibitem{li2005towards}
 \bibauthor{LI L\@, ALDERSON D\@, DOYLE J~C, et~al}\@. \bibtitle{Towards a
@@ -333,6 +304,23 @@
   Networks}\bibmark{[D]}\@. \bibaddress{Cambridge, MA}\thinspace{}\textnormal{:
   }\bibschool{Massachusetts Institute of Technology}\@, \bibyear{1961}\@.
 
+\bibitem{marconi1909nobel}
+\bibauthor{MARCONI G}\@. \bibtitle{Wireless telegraphic
+  communication}\bibmark{[G]} //\thinspace{}\bibbooktitle{Nobel Prize
+  address}\@. \bibyear{1909}\@.
+
+\bibitem{pool1978}
+\bibauthor{{de Sola Pool} I\@, KOCHEN M}\@. \bibtitle{Contacts and
+  influence}\bibmark{[J]}\@. \bibjournal{Social Networks}\@, \bibyear{1978}\@,
+  \bibvolume{1}\thinspace{}\textnormal{:
+  }\bibpages{5\thinspace{}\textnormal{--}\thinspace{}51}\@.
+
+\bibitem{barabasi2003linked}
+\bibauthor{BARAB{\'A}SI A-L}\@. \bibbooktitle{Linked: How Everything is
+  Connected to Everything Else and What It Means for Business, Science, and
+  Everyday Life}\bibmark{[M]}\@. \bibaddress{New York}\thinspace{}\textnormal{:
+  }\bibpublisher{Plume}\@, \bibyear{2003}\@.
+
 \bibitem{herrera2011generating}
 \bibauthor{HERRERA C\@, ZUFIRIA P~J}\@. \bibtitle{Generating scale-free
   networks with adjustable clustering coefficient via random
@@ -377,6 +365,11 @@
   Education, 2007. MSE'07. IEEE International Conference on}\@.
   \bibyear{2007}\thinspace{}\textnormal{:
   }\bibpages{160\thinspace{}\textnormal{--}\thinspace{}161}\@.
+
+\bibitem{NVIDIAGRID}
+\bibauthor{{NVIDIA Corporation}}\@. \bibtitle{Nvidia GRID}\bibmark{[EB/OL]}\@.
+  \bibyear{2013} \bibcitedate{[2013-03-10]}\@.
+  \newline\url{http://www.nvidia.com/object/cloud-gaming.html}\@.
 
 \bibitem{VDE}
 \bibauthor{{SourceForge}}\@. \bibtitle{VDE: Virtual Distributed
@@ -467,6 +460,13 @@
   32nd ACM Symposium on Theory of Computing}\@.
   \bibyear{2000}\thinspace{}\textnormal{:
   }\bibpages{163\thinspace{}\textnormal{--}\thinspace{}170}\@.
+
+\bibitem{watts1998smallworld}
+\bibauthor{WATTS D\@, STROGATZ S}\@. \bibtitle{Collective dynamics of
+  ``small-world'' networks}\bibmark{[J/OL]}\@. \bibjournal{Nature}\@,
+  \bibyear{1998}\@, \bibvolume{393}\thinspace{}\textnormal{:
+  }\bibpages{440\thinspace{}\textnormal{--}\thinspace{}442}\@.
+  \newline\url{http://dx.doi.org/10.1038/30918}\@.
 
 \bibitem{1967Milgram}
 \bibauthor{MILGRAM S}\@. \bibtitle{The Small World Problem}\bibmark{[J]}\@.
