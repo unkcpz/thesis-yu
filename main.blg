@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: gbt7714-2005.bst
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Database file #1: main.bib
+Warning--Require address: bollobas2001random
+Warning--Require citedate: luce1949method
+Warning--Require citedate: watts1998smallworld
+Warning--Require citedate: gilbert1959random
+Warning--Require citedate: erdos1959random
+Warning--Require citedate: solomonoff1951connectivity
+Warning--Require journal: albert1999diameter
+Warning--Require citedate: albert1999diameter
+Warning--Require citedate: wang2003complex
+Warning--Require address: leskovec2007msn
+Warning--Require year: reynolds2011bacon
+Warning--Require citedate: newman2001structure
+Warning--Require year: grossman2011erdos
+Warning--Require address: leighton1992introduction
+Warning--Require year: QUAGGA
+Warning--Require address: varia2010architecting
+You've used 77 entries,
+            3107 wiz_defined-function locations,
+            1183 strings with 18504 characters,
+and the built_in function-call counts, 106408 in all, are:
+= -- 11314
+> -- 221
+< -- 516
++ -- 8933
+- -- 708
+* -- 3588
+:= -- 11698
+add.period$ -- 0
+call.type$ -- 77
+change.case$ -- 288
+chr.to.int$ -- 0
+cite$ -- 93
+duplicate$ -- 14703
+empty$ -- 4254
+format.name$ -- 576
+if$ -- 28014
+int.to.chr$ -- 0
+int.to.str$ -- 77
+missing$ -- 0
+newline$ -- 258
+num.names$ -- 76
+pop$ -- 1520
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1012
+stack$ -- 0
+substring$ -- 12260
+swap$ -- 3603
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 16
+while$ -- 1419
+width$ -- 79
+write$ -- 1104
+(There were 16 warnings)
