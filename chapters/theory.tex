@@ -69,24 +69,24 @@ $E_{\mathrm{cutoff}}$是波函数的截断能，该参数控制了展开平面�
   \bm{R}_i = \bm{R}^0_i + \kappa \bm{u}_i.
 \end{equation}
 动能项中参数$\kappa$指数项为\num{-2},势能项该参数指数项为\num{2}，令动能项和势能项该参数的阶相等，则得到$\kappa$的形式为：$\kappa=（）^{1/4}$，该参数除了对氢和氦两种元素，值均小于\num{0.1}。使用这个参数，可以用微扰法对哈密顿量和波函数进行系统的展开。最低阶项展开式中波函数可以写为$\Psi(\ubm{r},\ubm{R})=\chi(\ubm{R})\psi(\ubm{r};\ubm{R})$，可以看到电子波函数仅参数地依赖于原子坐标。因此电子波函数满足方程：
-\begin{equation}\label{eq:dftp_ele_eigen}
+\begin{equation}\label{eq:dfpt_ele_eigen}
   \left[ T_e + V_{ee} + H_{e-i}(\ubm{R}) \right]\psi_n(\ubm{r};\ubm{R}) = E_n(\ubm{R})\psi_n(\ubm{R}); \ubm{R}),
 \end{equation}
 对离子位置R的依赖统一通过$H_{e-i}$描述，离子的位置是下列方程的解：
-\begin{equation}\label{eq:dftp_ion_eigen}
+\begin{equation}\label{eq:dfpt_ion_eigen}
   \left[ T_i + V_{ii} + E_n(\ubm{R}) \right] \chi(\ubm{R}) = \xi \chi(\ubm{R}).
 \end{equation}
-这个近似被成为绝热近似或波恩-奥本海默近似。这个近似将电子和离子进行了动力学的解耦，忽略了离子移动导致的电子的激发。式（\ref{eq:dftp_ion_eigen}）中，$E_n$是电子系统的某个本征值，通常可认为是解耦后电子薛定谔方程式(\ref{eq:dftp_ele_eigen})的基态解，而且通常来说，有限温度的电子激发不会对离子移动造成什么影响。这一项包含了重要的价电子对离子实移动的屏蔽效应，虽然该效应对基态和对激发态是一样的。
+这个近似被成为绝热近似或波恩-奥本海默近似。这个近似将电子和离子进行了动力学的解耦，忽略了离子移动导致的电子的激发。式（\ref{eq:dfpt_ion_eigen}）中，$E_n$是电子系统的某个本征值，通常可认为是解耦后电子薛定谔方程式(\ref{eq:dfpt_ele_eigen})的基态解，而且通常来说，有限温度的电子激发不会对离子移动造成什么影响。这一项包含了重要的价电子对离子实移动的屏蔽效应，虽然该效应对基态和对激发态是一样的。
 
 \section{密度泛函微扰理论（DFPT）}
 
-电子和声子可以被认为是固体的最基本的构筑单元，任何固体物质都包含了这两种元激发。对固态物质性质的本质的理解都基于对电子和声子这两种准粒子的清晰认识上。然而，要解出周期性体系中电子和原子核（或将原子核和内层非价电子构成的离子看作独立的对象）互相耦合的多体量子力学问题是一个接近不可能的任务。但由于电子和原子核在质量上的巨大差别，它们两者可以近似地看作独立的两个动力学子系统而独立求解。近几十年，快速发展的数值方法，使得从第一性原理求解电子部分的量子问题成为可能。大多数的第一性原理求解电子量子问题的方法都是基于上一节所描述的密度泛函的方法，现在有许多DFT的软件，使得电子结构的求解成为物质研究的一个例行的探索步骤。对声子部分的第一性原理求解的方法的成熟比电子部分的更晚，这是显而易见的，因为对基础的振动性质的精确的数值描述是要以精确的电子结构的描述为基础的。上世纪90年代所发展的通过微扰的线性响应的方法，也就是题目中的密度泛函微扰理论（DFTP）现在已经成为准确地描述声子的高效的数值方法。
+电子和声子可以被认为是固体的最基本的构筑单元，任何固体物质都包含了这两种元激发。对固态物质性质的本质的理解都基于对电子和声子这两种准粒子的清晰认识上。然而，要解出周期性体系中电子和原子核（或将原子核和内层非价电子构成的离子看作独立的对象）互相耦合的多体量子力学问题是一个接近不可能的任务。但由于电子和原子核在质量上的巨大差别，它们两者可以近似地看作独立的两个动力学子系统而独立求解。近几十年，快速发展的数值方法，使得从第一性原理求解电子部分的量子问题成为可能。大多数的第一性原理求解电子量子问题的方法都是基于上一节所描述的密度泛函的方法，现在有许多DFT的软件，使得电子结构的求解成为物质研究的一个例行的探索步骤。对声子部分的第一性原理求解的方法的成熟比电子部分的更晚，这是显而易见的，因为对基础的振动性质的精确的数值描述是要以精确的电子结构的描述为基础的。上世纪90年代所发展的通过微扰的线性响应的方法，也就是题目中的密度泛函微扰理论（DFPT）现在已经成为准确地描述声子的高效的数值方法。
 
 电子和声子之间的相互作用即电声耦合，影响甚至主导了许多固相物质的物理性质。该相互作用最明显的例子是，在金属中，晶格振动影响了低能级的电子激发，从而导致了可观测的电子迁移性质和热力学性质的改变。而且，电声耦合是电子自发成对的原因之一，这导致了超导这一宏观的物理现象。
 
 这一节我们将介绍DFT框架下，第一性原理数值求解声子的电声耦合的方法。再过渡到声子调制的电子成对相互作用从而得以描述超导性质。在开始，有必要先简要叙述并给出一些数学描述以方便后续的介绍。这部分的剩余内容将紧接着\ref{sec:BO-approx}小结的绝热近似，给出比绝热近似更精确的描述，再进一步介绍晶格振动的唯像的描述。
 
-为得到比以上\ref{sec:BO-approx}小结绝热近似更精确的解，我们使用式(\ref{eq:dftp_ele_eigen})的波函数解为基组来展开原系统的波函数：
+为得到比以上\ref{sec:BO-approx}小结绝热近似更精确的解，我们使用式(\ref{eq:dfpt_ele_eigen})的波函数解为基组来展开原系统的波函数：
 \begin{equation}
   \Psi_m(\ubm{r};\ubm{R}) = \sum_n \chi_{mn}(\ubm{R})\psi_n(\ubm{r};\ubm{R}).
 \end{equation}
@@ -94,7 +94,7 @@ $E_{\mathrm{cutoff}}$是波函数的截断能，该参数控制了展开平面�
 \begin{equation}
   \left[ T_i + V_{ii} + E_n(\ubm{R}) \right] \chi_{mn}(\ubm{R}) + \sum_{n'}\Delta H_{nn'}\chi_{mn'}(\ubm{R}) = \xi_m \chi_{mn} (\ubm{R}).
 \end{equation}
-与绝热近似时离子位置满足的方程式(\ref{eq:dftp_ion_eigen})相比多出了左边第二项，其中$\Delta H=\Delta H^{(1)} + \Delta H^{(2)}$：
+与绝热近似时离子位置满足的方程式(\ref{eq:dfpt_ion_eigen})相比多出了左边第二项，其中$\Delta H=\Delta H^{(1)} + \Delta H^{(2)}$：
 \begin{equation}
   \Delta H_{nn'}^{(1)} = -\frac{1}{M}\sum_i \int dr^{3N}\psi_n^*(\ubm{r};\ubm{R})\nabla_{R_i}\psi_{n'}(\ubm{r};\ubm{R})\cdot \nabla_{R_i},
 \end{equation}
@@ -126,7 +126,7 @@ $E_{\mathrm{cutoff}}$是波函数的截断能，该参数控制了展开平面�
   F_{j\beta} = -\sum_{i\alpha} \Phi_{\alpha\beta}(i,j)u_{i\alpha}.
 \end{equation}
 因此该项描述了位移随力的线性变化。也就是弹簧振子的简谐振动力常数的三维（张量）版本，而更高次项系数被称为非简谐力常数。如果仅截断到二次项，就是我们常说的简谐近似。
-在周期性体系中，原子的序号可以使用一对符号来表示即；$i=(l\kappa)$，其中$l$表示单胞序号，$\kappa$表示原子在单胞内的序号。通过傅立叶变化将力常数矩阵变换到倒空间为动力学矩阵：
+在周期性体系中，原子的序号可以使用一对符号来表示即：$i=(l\kappa)$，其中$l$表示单胞序号，$\kappa$表示原子在单胞内的序号。通过傅立叶变化将力常数矩阵变换到倒空间为动力学矩阵：
 \begin{equation}
   D_{\kappa\alpha\kappa'\beta}(\bm{q}) = \frac{1}{\sqrt{M_\kappa M_{\kappa'}}} \sum_l \Phi_{\alpha\beta}(l\kappa,0\kappa')e^{-i\bm{q}(\bm{R}^0_{l\kappa}-\bm{R}^0_{0\kappa'})},
 \end{equation}
@@ -210,7 +210,7 @@ $E_{\mathrm{cutoff}}$是波函数的截断能，该参数控制了展开平面�
 \end{align}
 其中$\epsilon$为静态介电常数矩阵，描述的是体系对外场微扰的屏蔽。
 
-为高效求解该介电常数矩阵的逆就引出了本章所要介绍的方法DFTP，其克服了许多其他方法的不足，如求解$\chi_0$时需要未占据态，以及对于周期体系实空间中的介电矩阵为无穷维，通过傅立叶变换到倒空间该矩阵逆的求解十分耗费计算资源。DFTP通过自洽法来实现线性响应法而避免了介电常数矩阵求解时的困难。
+为高效求解该介电常数矩阵的逆就引出了本章所要介绍的方法DFPT，其克服了许多其他方法的不足，如求解$\chi_0$时需要未占据态，以及对于周期体系实空间中的介电矩阵为无穷维，通过傅立叶变换到倒空间该矩阵逆的求解十分耗费计算资源。DFPT通过自洽法来实现线性响应法而避免了介电常数矩阵求解时的困难。
 
 公式(\ref{eq:linear_variation_ele})电子密度的一阶变分中包含了对电子态的两次的求和，而参数$(f_i-f_j)/(\epsilon_i-\epsilon_j)$限制了（对于半导体，对金属的拓展可参考文献\cite{de1995lattice}）其中一个态为导带另一个态来自价带，不考虑磁性时体系满足时间反演对称性，式(\ref{eq:linear_variation_ele})可以写为：
 \begin{equation}
@@ -254,21 +254,21 @@ $E_{\mathrm{cutoff}}$是波函数的截断能，该参数控制了展开平面�
   &= -e^{i\bm{qr}} \sum_l e^{i\bm{q} (\bm{R}^0_{l\kappa}-\bm{r})} \nabla^{\bm{r}}_\alpha v_\kappa(\bm{r}-\bm{R}^0_{l\kappa}).
 \end{align}
 而电子部分的一阶导，则就需要用到上一小节介绍的DFPT方法。首先将电子密度的变分通过傅里叶变换到倒空间为：
-\begin{equation}\label{eq:dftp_scf01}
+\begin{equation}\label{eq:dfpt_scf01}
   \delta^{\bm{q}}_{\kappa\alpha} n(\bm{q}+\bm{G}) = - \frac{4}{V}\sum_{\bm{k}v} \langle \bm{k}v| e^{-i(\bm{q}+\bm{G})\bm{r}}| \Delta^{\bm{q}}_{\kappa\alpha}(\bm{k}v) \rangle,
 \end{equation}
 $V$为晶体的单胞体积，其中的$|\Delta^{\bm{q}}_{\kappa\alpha}(\bm{k}v) \rangle$即为式(\ref{eq:delta_n_valence})中的部分，定义如下：
-\begin{equation}\label{eq:dftp_scf02}
+\begin{equation}\label{eq:dfpt_scf02}
   | \Delta^{\bm{q}}_{\kappa\alpha}(\bm{k}v) \rangle =
   \sum_c \frac{|\bm{k}+\bm{q}c\rangle \langle \bm{k}+\bm{q}c | \delta^{\bm{q}}_{\kappa\alpha} v_\mathrm{eff} | \bm{k}v \rangle}
   {\epsilon_c(\bm{k}+\bm{q})-\epsilon_v(\bm{k})}.
 \end{equation}
 可以通过求解下列非齐次线性方程组得到：
-\begin{equation}\label{eq:dftp_scf03}
+\begin{equation}\label{eq:dfpt_scf03}
   (H^{\bm{k}+\bm{q}}_{KS}-\epsilon_v(\bm{k}))|\Delta^{\bm{q}}_{\kappa\alpha}(\bm{k}v)\rangle =
   (P^{\bm{k}+\bm{q}}_v-1)\delta^{\bm{q}}_{\kappa\alpha}v_\mathrm{eff}|\bm{k}v\rangle .
 \end{equation}
-式(\ref{eq:dftp_scf01}),式(\ref{eq:dftp_scf02})和式(\ref{eq:dftp_scf03})组成的三个方程可以自洽求解。自洽后得到特定倒空间点$\bm{q}$的电子和外式的变分，从而可代入求解该$\bm{q}$点处的动力学矩阵得对应的声子模式。
+式(\ref{eq:dfpt_scf01}),式(\ref{eq:dfpt_scf02})和式(\ref{eq:dfpt_scf03})组成的三个方程可以自洽求解。自洽后得到特定倒空间点$\bm{q}$的电子和外式的变分，从而可代入求解该$\bm{q}$点处的动力学矩阵得对应的声子模式。
 \begin{equation}
   \delta^{\bm{q}}_{\kappa\alpha}\delta^{-\bm{q}}_{\kappa'\beta} E =
   \sum_{\bm{G}} [ \delta^{\bm{q}}_{\kappa\alpha}n(\bm{G}+\bm{q})\delta^{\bm{-q}}_{\kappa'\beta}v_\mathrm{ext}(\bm{G}+\bm{q}) + \delta^{\bm{q}}_{\kappa\alpha}\delta^{\bm{-q}}_{\kappa'\beta} v_\mathrm{ext}(\bm{G})].
@@ -299,7 +299,7 @@ Elishberg理论的一个重要的结果是其描述超导能带的方程的计�
   N(\epsilon_F) \frac{1}{N_{\bm{q}}} \sum_{\bm{q}j}
   |g^{\bm{q}j}_{\bm{k}'\nu',\bm{k}\nu}|^2 \delta(\omega-\omega_{\bm{q}j}).
 \end{equation}
-其中的$N(\epsilon_F)$是费米能级处单个电子的电子态密度。在固定频率$\omega$对所有该过程涉及的声子模式求和。耦合的相互作用就是前面提到的包含屏蔽效应的电声相互作用耦合函数(矩阵元表示)即式（\ref{eq:coupling_coeff}）。该式右边只涉及非超导态的性质。又由于动量守恒，在该过程中$\bm{q}=\bm{k}-\bm{k}'$。且该电子成对相互作用形成的过程过程中，有效的电子态集中在能量为，$|\epsilon_{\bm{k}\nu}-\epsilon_F|<\omega_{\mathrm{phonon}}$处，因此在式(\ref{eq:elishaberg_aniso})中可以仅仅考虑费米面处的电子\cite{allen1983theory}。
+其中的$N(\epsilon_F)$是费米能级处单个电子的电子态密度。在固定频率$\omega$对所有该过程涉及的声子模式求和。耦合的相互作用就是前面提到的包含屏蔽效应的电声相互作用耦合函数(矩阵元表示)即式（\ref{eq:coupling_coeff}）。该式右边只涉及非超导态的性质。又由于动量守恒，在该过程中$\bm{q}=\bm{k}-\bm{k}'$。且该电子成对相互作用形成的过程中，有效的电子态集中在能量为，$|\epsilon_{\bm{k}\nu}-\epsilon_F|<\omega_{\mathrm{phonon}}$处，因此在式(\ref{eq:elishaberg_aniso})中可以仅仅考虑费米面处的电子\cite{allen1983theory}。
 
 大多数超导体都表现出各向同性的超导带隙，原因是真实材料中都存在缺陷，而缺陷的存在会抵消电子相互作用的动量依赖。根据这两个假设，在大多数情况下可以近考虑费米面附近的电子态，且使用各项同性的Elishaberg函数：
 \begin{equation}\label{eq:elishaberg_iso}

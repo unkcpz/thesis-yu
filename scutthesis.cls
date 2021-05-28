@@ -430,47 +430,47 @@
 \renewcommand*{\chaptername}{\njut@cap@chaptername}
 \renewcommand*{\appendixname}{\njut@cap@appendixname}
 \titleformat{\chapter}[hang]
-            {\centering\zihao{1}\bfseries}
+            {\centering\zihao{-2}\bfseries}
             {\chaptertitlename}{1em}{}
 \titlespacing{\chapter}
              {0pt}
-             {*4}
-             {*3}
+             {*2.5}
+             {*2.5}
 \titleformat{\section}[hang]
-            {\zihao{-2}\bfseries}
+            {\zihao{-3}\bfseries}
             {\thesection}{1em}{}
 \titlespacing{\section}
              {0pt}
-             {*3.5}
-             {*2.3}
+             {*2.5}
+             {*2.5}
 \titleformat{\subsection}[hang]
-            {\zihao{3}\bfseries}
+            {\zihao{4}\bfseries}
             {\thesubsection}{1em}{}
 \titlespacing{\subsection}
              {0pt}
-             {*3}
-             {*1.5}
+             {*2.5}
+             {*2.5}
 \titleformat{\subsubsection}[hang]
-            {\zihao{-3}\bfseries}
+            {\zihao{-4}\bfseries}
             {\thesubsubsection}{1em}{}
 \titlespacing{\subsubsection}
              {0pt}
              {*2.5}
-             {*1.5}
+             {*2.5}
 \titleformat{\paragraph}[hang]
-            {\zihao{4}\bfseries}
+            {\zihao{3}\bfseries}
             {}{0em}{}
 \titlespacing{\paragraph}
              {0pt}
-             {*2}
-             {*1}
+             {*2.5}
+             {*2.5}
 \titleformat{\subparagraph}[hang]
-            {\zihao{-4}\bfseries}
+            {\zihao{-3}\bfseries}
             {}{0em}{}
 \titlespacing{\subparagraph}
              {0pt}
-             {*1.5}
-             {*1}
+             {*2.5}
+             {*2.5}
 \setcounter{secnumdepth}{4}
 \renewcommand{\thechapter}{\arabic{chapter}}
 \renewcommand{\thesection}{\thechapter\thinspace.\thinspace\arabic{section}}
@@ -506,19 +506,20 @@
 }
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{0pt}
-\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrulewidth}{1.5pt}
 \fancyhead{}  % override fancyhead to none.
-\fancyhead[CE]{华南理工大学{\njut@value@degree}学位论文}
-\fancyhead[CO]{\leftmark}
+\fancyhead[CE]{\songti \zihao{5} 华南理工大学{\njut@value@degree}学位论文}
+\fancyhead[CO]{\songti \zihao{5} \leftmark}
 \pagestyle{fancy}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 \renewcommand{\chaptermark}[1]{\markboth{%
  \bfseries\if@mainmatter\chaptertitlename\hspace{1em}\fi{#1}%
 }{}}
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \renewcommand{\sectionmark}[1]{\markright{%
  \bfseries\if@mainmatter\thesection\hspace{1em}\fi{#1}%
 }}
-\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
-  \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \setlist{%
   topsep=0.3em,             % 列表顶端的垂直空白
   partopsep=0pt,            % 列表环境前面紧接着一个空白行时其顶端的额外垂直空白
@@ -597,6 +598,9 @@
     \endgroup
   \fi}
 \renewcommand*{\tableofcontents}{%
+  % 需要额外的一个括号把pagestyle限制在该部分
+  {
+    \pagestyle{plain} % Both header and footer are empty.
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
@@ -606,8 +610,13 @@
     \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
     \@starttoc{toc}%
     \if@restonecol\twocolumn\fi
+    \clearpage
+  }
 }
 \renewcommand*{\listoftables}{%
+  % 需要额外的一个括号把pagestyle限制在该部分
+  {
+    \pagestyle{plain} % Both header and footer are empty.
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
@@ -617,8 +626,13 @@
     \@mkboth{\MakeUppercase\listtablename}{\MakeUppercase\listtablename}%
     \@starttoc{lot}%
     \if@restonecol\twocolumn\fi
+    \clearpage
+  }
 }
 \renewcommand*{\listoffigures}{%
+  % 需要额外的一个括号把pagestyle限制在该部分
+  {
+    \pagestyle{plain} % Both header and footer are empty.
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
@@ -628,6 +642,8 @@
     \@mkboth{\MakeUppercase\listfigurename}{\MakeUppercase\listfigurename}%
     \@starttoc{lof}%
     \if@restonecol\twocolumn\fi
+    \clearpage
+  }
 }
 \renewenvironment{thebibliography}[1]
      {\nchapter{\bibname}%
@@ -648,7 +664,7 @@
      {\def\@noitemerr
        {\@latex@warning{Empty `thebibliography' environment}}%
       \endlist}
-\bibliographystyle{gbt7714-2005}
+\bibliographystyle{gbt7714-2005-scutbad}
 \setcitestyle{super,square}
 \renewcommand\NAT@citesuper[3]{%
 \ifNAT@swa%
@@ -764,7 +780,7 @@
            {\CJKunderline{\makebox[#1]{#2}}}
 \def\njutunderline{\@ifnextchar[\njut@underline\CJKunderline}
 \newcommand*{\makenlctitle}{%
-  \thispagestyle{empty} % Both header and footer are empty.
+  \thispagestyle{plain} % Both header and footer are empty.
   \pdfbookmark[0]{\njut@cap@nlc}{nlc}
   {\heiti\zihao{4}
     \noindent\makebox[40pt][l]{\njut@cap@nlc@classification}
@@ -906,7 +922,7 @@
   \renewcommand{\njut@value@abstract@titleb}{#1}%
 }
 \newenvironment{abstract}{%
-  \thispagestyle{empty}
+  \thispagestyle{plain}
   \pdfbookmark[0]{\njut@cap@abstract}{abstract}
   \vspace{3mm}
   \vspace{5mm}
@@ -929,7 +945,7 @@
   \renewcommand{\njut@value@abstract@en@titleb}{#1}%
 }
 \newenvironment{englishabstract}{%
-  \thispagestyle{empty}
+  \thispagestyle{plain}
   \pdfbookmark[0]{\njut@cap@abstract@en}{englishabstract}
   \vspace{5mm}
   \begin{center}
@@ -946,6 +962,9 @@
 }
 \newenvironment{preface}{%
   \nchapter{\njut@cap@preface}
+}{}
+\newenvironment{conclusion}{%
+  \nchapter{\njut@cap@conclusion}
 }{}
 \newenvironment{acknowledgement}{%
   \nchapter{\njut@cap@acknowledgementname}

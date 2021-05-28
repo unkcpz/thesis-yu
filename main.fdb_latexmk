@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1621825156 "/home/unkcpz/Projects/thesis/thesis-yu/main.tex" "/home/unkcpz/Projects/thesis/thesis-yu/main.pdf" "main" 1621825156
-  "/home/unkcpz/Projects/thesis/thesis-yu/main.aux" 1621825156 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/unkcpz/Projects/thesis/thesis-yu/main.tex" 1621825156 38168 a176b727fd7315cf12eacf84def164cb ""
+["pdflatex"] 1622195069 "/home/unkcpz/Projects/thesis/thesis-yu/main.tex" "/home/unkcpz/Projects/thesis/thesis-yu/main.pdf" "main" 1622195104
+  "/home/unkcpz/Projects/thesis/thesis-yu/main.aux" 1622195069 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/unkcpz/Projects/thesis/thesis-yu/main.tex" 1622195103 31834 4c5eb741f711e40caef8b70a58ffa098 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1616952564 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1616952564 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty" 1616952564 6501 4011d89d9621e0b0901138815ba5ff29 ""
@@ -10,9 +10,9 @@
   "/usr/share/texmf-dist/tex/latex/base/book.cls" 1616952564 23269 46aa9b22aad0e958412c5a46b0e46893 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1616952564 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1620951135 2635856 42a806cc3f18265705ca597786b204cd ""
-  "main.tex" 1621825156 38168 a176b727fd7315cf12eacf84def164cb ""
-  "scutthesis.cls" 1617969312 40211 49318bafb07f62a63a0ba2c967b473a1 ""
+  "main.tex" 1622195103 31834 4c5eb741f711e40caef8b70a58ffa098 ""
+  "scutthesis.cls" 1622194938 40837 9e520140b6ff17ab7c3cd9cbaa1e2f16 ""
   (generated)
-  "/home/unkcpz/Projects/thesis/thesis-yu/main.log"
-  "/home/unkcpz/Projects/thesis/thesis-yu/main.pdf"
   "main.log"
+  "/home/unkcpz/Projects/thesis/thesis-yu/main.pdf"
+  "/home/unkcpz/Projects/thesis/thesis-yu/main.log"
