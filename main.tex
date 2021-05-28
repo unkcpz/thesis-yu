@@ -20,9 +20,12 @@
 \usepackage[version=4]{mhchem}
 % for table landscape
 \usepackage{pdflscape}
+\usepackage{afterpage}
 % for code listings
 % Listings
 \usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{hyperref}
 % \usepackage{lstlinebgrd}
 \lstset{
     backgroundcolor=\color{white},
@@ -84,9 +87,9 @@
 % 该编号可在下述网址查询：http://www.udcc.org/udcsummary/php/index.php?lang=chi
 % \udc{004.72}
 % 国家图书馆封面上的论文标题第一行，不可换行。此属性可选，默认值为通过\title设置的标题。
-\nlctitlea{二维硼化钛结构及其超导性质}
+\nlctitlea{二维硼化钛的高通量结构搜索}
 % 国家图书馆封面上的论文标题第二行，不可换行。此属性可选，默认值为空白。
-\nlctitleb{的第一性原理研究}
+\nlctitleb{及其超导电性的理论研究}
 % 国家图书馆封面上的论文标题第三行，不可换行。此属性可选，默认值为空白。
 % \nlctitlec{（第三行提名或副提名）}
 % 导师的单位名称及地址
@@ -104,8 +107,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置论文的中文封面
-\titlea{二维硼化钛结构及其超导性质}
-\titleb{的第一性原理研究}
+\titlea{二维硼化钛的高通量结构搜索}
+\titleb{及其超导电性的理论研究}
 
 % 论文作者姓名
 \author{余桔颂}
@@ -130,11 +133,11 @@
 % 论文作者所在学校或机构的名称。此属性可选，默认值为``南京大学''。
 \institute{华南理工大学}
 % 论文的提交日期，需设置年、月、日。
-\submitdate{2021年4月6日}
+\submitdate{2021年6月22日}
 % 论文的答辩日期，需设置年、月、日。
-\defenddate{2021年6月1日}
+\defenddate{2021年8月1日}
 % 学位授予日期，需设置年、月、日。
-\awarddate{2021年6月20日}
+\awarddate{2021年8月20日}
 % 论文的定稿日期，需设置年、月、日。此属性可选，默认值为最后一次编译时的日期，精确到日。
 %% \date{2013年5月1日}
 
@@ -142,11 +145,11 @@
 % 设置论文的英文封面
 
 % 论文的英文标题，不可换行
-\englishtitle{First-principles Study of the Structure and Superconducting Properties of Two-Dimensional Titanium Boride}
+\englishtitle{High-throughput Structure Search of Two-Dimensional Titanium Boride and Theoretical Study of Its Superconducting Properties}
 % 论文作者姓名的拼音
 \englishauthor{Yu Ju-Song}
 % 导师姓名职称的英文
-\englishsupervisor{Professor Yang Xiao-Bao}
+\englishsupervisor{Professor Yang Xiao-Bao} 
 % 论文作者学科与专业的英文名
 % \englishmajor{Computer Software and Theory}
 % 论文作者所在院系的英文名称
@@ -191,7 +194,7 @@
 % 制作英文封面
 \makeenglishtitle
 % 制作国家图书馆封面（博士学位论文才需要）
-\makenlctitle
+% \makenlctitle
 
 \makelicense
 
@@ -206,72 +209,72 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 论文的中文摘要
 \begin{abstract}
-二维硼材料结构和性质上的多样性非常丰富，在理论预测的基础上，研究人员已经在实验上制备了一定尺寸的单层硼材料。
-理论预测表明二维硼材料以及硼与其他元素所形成的二维化合物会表现出丰富的物理化学性质，
-尤其是当硼和过渡金属原子形成二维化合物时性质更加丰富。这使得二维硼化合物不但具有应用上的潜力，同时也可以作为合适候选体系以研究新的物理现象。
-硼元素作为周期表中碳元素的近邻元素有三个价层电子，由于其不能够通过经典的二中心二电子(2c-2e)硼-硼键形成全满的八电子构型，硼元素在形成化合物时会展现出丰富的成键形式，这个原因导致了硼的化合物有极为丰富的结构多样性。
-一方面这是其丰富的性质多样性的来源，但另一方面这也使得其合成和精确构型的确定变得困难。
-如何发现和理论预测满足特定结构特定性质的二维硼材料，是本文研究的出发点。
-如果能从理论上预测具有优秀物理化学性质的二维硼材料，并对预测的材料的结构稳定性、结构特征、材料性质进行深入的研究，则能够快速地指导实验完成此类材料的制备和应用，从而大大减少材料科学中的试验成本,缩短研发周期。
+近年来，二维材料由于其结构新颖、性能优异而备受关注。
+硼元素的缺电子性（electron deficiency）使其无法通过经典的二中心二电子（2c-2e）键形成稳定结构，
+需要通过多中心键来使体系满足八电子规则。这导致了硼的化合物丰富的结构多样性。
+理论和实验表明，二维硼材料可以在金属衬底上稳定存在，
+结构是含有一定比例的六边形空位的三角晶格，
+空位的具体分布可用于调控体系性质。
+当硼和过渡金属原子形成二维化合物时，
+体系的结构和性质与金属原子的种类、比例密切相关，
+这使得二维过渡金属硼化合物具有很好的应用前景，
+并可以作为研究新的物理现象的候选体系。
 
-在周期性体系晶格的格点位置放置不同的元素，从原始晶格出发拓展超晶格，并在格点放置不同元素，能够拓展出各种各样的衍生结构，
-而这些衍生结构中存在大量的等价构型。
-构型的总数随着超胞体积的扩大急剧增加，因此通过结构上，简单的两两之间的几何对比很难对数量如此巨大的构型集合进行唯一性的挑选。
-我们通过使用厄米标准型矩阵(HNF)来表示衍生的晶格，并通过对晶格作用对称操作后进行对比查重，来得到确定体积的超晶格中物理不等价的晶格。针对固定的衍生晶格，我们对晶格位点进行了编号，后续晶体所属空间群的对称操作能够等价于一个对编号的置换操作。同时合并使用对不同的衍生的超晶格的HNF进一步划分归类，将具有相同的史密斯标准型矩阵(SNF)的超晶格归为同类。同类超晶格可以有相同的商群，因而有相同的不等价的标号顺序。因为SNF矩阵的数量要远远少于HNF矩阵的数量，通过这个方法，我们能够快速的对一系列具有相同SNF矩阵的晶格排除平移操作，有效提高了查重效率。
-我们通过自己编写的软件实现了对这类衍生结构的查询，并向用户提供了友好的命令行以及网页端的接口来完成查重任务。
+结构多样性是体系性质丰富的来源，
+但也使硼基化合物构型的理论预测和实验合成变得困难。
+硼基化合物的势能面存在大量的局域极小值，增大了结构搜索的难度，
+多中心键的存在使得势函数的拟合变得困难，导致无法简化体系的能量评估。
+以二维硼化钛结构为例，本文通过基于结构识别的高通量第一原理计算，
+使用加入结构相关的先验知识进行有偏向性的筛选（biased-screening），
+对体系的结构稳定性和性质进行了系统研究。
 
-大型计算机快速增长的计算能力和不断发展的计算方法在计算材料学的发展中发挥了重大作用。
-但是，这些发展同样带来了对海量数据，计算和管理的新挑战。
-计算能力的发展使得高通量计算中，流程的自动化和数据量的可拓展性和易快速查询变得非常重要。
-同时，当数据量变得巨大，数据产生和获取过程将变得难以回溯，而这又与“可重复性”这一科学的重要原则相违背。
-因此，在高通量计算材料学中，为了保持（1）流程自动化（2）数据体量易拓展（3）数据快速查询（4）过程可重复等原则，
-科学家们开发了许多的工作流和数据库工具。AiiDA这一高通量工具就满足了这些特点，它能够简化和统一用户端对集群服务端的操作，并对复杂计算流程的中间详细信息和输入输出进行清晰的记录。
-本人负责对其引擎的老旧的并发库依赖进行了更新，全面用Python内置并发库\texttt{asyncio}替换并移除了AiiDA对第三方并发库\texttt{tornado}的依赖，使其在插件等开发过程中能够使用最新的软件依赖。
+我们使用结构查重方法构建相对合理的初始构型，初始构型可均匀分布于势能面空间中目标结构能量局域极小值点附近，
+效果优于无偏向性的全局搜索算法（unbiased-screening）。
+在二维硼化钛中，硼原子之间倾向于保持包含空位的平面三角网格结构，通过引入多边形空位，
+钛原子可以出现不同的配位数。对于给定尺寸的体系，我们考虑各种可能的超胞形状；
+在给定的超胞中，通过结构检查，去掉重复结构，充分考虑了各种合理的初始构型。
+我们发布了开源的程序包Structures of Alloy Generation And Recognition (SAGAR)，并申请了软件著作权。
 
-针对二维硼材料结构上的共性，我们认为使用加入结构相关的先验知识进行有偏向性的筛选和搜索(biased-screening)的效果会优于使用全局搜索算法的无偏向性的结构搜索（unbiased-screening）。考虑到硼二维材料中硼原子之间倾向于保持包含空位的平面三角网格结构，我们使用结构查重软件优先构建相对合理的初始构型，使初始构型尽可能均匀分布于势能面空间中目标结构能量局域极小值点附近。再对所有的生成的结构进行第一性原理计算获得准确的能量和性质。
-使用结构生成查重工具并合并使用高通量工作流工具AiiDA，我们对单层钛硼结构进行了结构稳定性和超导性质的理论研究。
-通过该研究，我们不但确认了各个不同配比下已经报导过的钛硼单层材料，还发现了能量更低且具有优秀超导性质的\ce{TiB7}单层构型。需要强调的是，通过加入先验的结构信息，我们所生成和计算的结构总数相比全局搜索算法所涉及的结构数量大大减少，有偏的结构搜索方法逻辑简单，更容易结合工作流工具进行计算的管理，并且还获得了更好的结果。因此，我们认为对于特定材料，如果其结构上拥有固定特征，可以考虑使用该方法首先生成合理构型，来快速的筛选符合指定目标的结构。
+我们用高通量工作流程序 AiiDA，对二维硼化钛进行了结构稳定性的系统研究。 
+通过研究分析，我们确认了各个不同配比下已经报导过的钛硼单层材料，
+发现空间群为（$Cmmm$）的\ce{TiB7}单层结构能量更低。
+需要强调的是，通过加入先验的结构信息，我们所生成和计算的结构总数相比全局搜索算法所涉及的结构数量大大减少，
+有偏向性的结构搜索方法逻辑简单，更容易结合工作流工具进行计算的管理。 
+
+我们对最稳定的\ce{TiB7}、\ce{TiB9}单层
+结构以及由单层\ce{TiB7}堆叠而成的双层\ce{TiB7}结构进行了超导电性的计算和分析。
+其中，单层\ce{TiB7}的超导转变温度最大，达到了\SI{8.3}{\kelvin}，
+而且其超导转变温度随拉伸应力的增大而减小。
+\ce{TiB7}双层和\ce{TiB9}单层的超导转变温度分别为\SI{5.5}{\kelvin}和\SI{1.2}{\kelvin}。
+
+在二维硼化钛结构的搜索中，我们结合材料相关的先验知识，发现进行有偏向性的筛选和搜索，
+可以有效缩小搜索的构型空间，节约计算成本。
+经推广，我们对更一般性的体系实现了高效的周期结构查重、快速生成合理结构的方法。
+这可以和高通量工具流程序结合，对一般性体系进行相应的性质计算和分析。
+
 
 % 中文关键词。关键词之间用中文全角分号隔开，末尾无标点符号。
-\keywords{二维材料；硼化物；过渡金属；高通量计算；结构搜索}
+\keywords{二维材料；硼化物；高通量计算；结构搜索；超导电性}
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 论文的英文摘要
 \begin{englishabstract}
-The structure and property of two-dimensional boron materials are diverse. On the basis of theoretical prediction, researchers have experimentally prepared monolayer boron materials of certain size.
-Theoretical predictions show that two-dimensional boron materials and two-dimensional compounds formed by boron and other elements will exhibit rich physical and chemical properties.
-In particular, two-dimensional compounds formed from boron and transition metal atoms have many novel properties, which makes the two-dimensional boron compound not only potentially applicable, but also can be used as a suitable candidate system for new physical phenomena study.
-Boron is next to the carbon in the periodic table and has three valence electrons. Since it is not able to conform to the eight-electron rule through the classic two-center two-electron (2c-2e) boron-boron bond, boron show extremely rich forms of bonding in the formation of compounds, which leads to the extremely rich structural diversity of boron compounds.
-On the one hand, this is the source of its rich property diversity, on the other hand, it makes its synthesis and precise configuration difficult to determine.
-How to find and predict the two-dimensional boron materials with specific structure and properties is the starting point of this study.
-If the two-dimensional boron materials with excellent physical and chemical properties can be predicted theoretically, and the structural stability, structural characteristics and material properties of the predicted materials can be deeply studied, the preparation and application of such materials can be more easily, thus greatly reducing the experimental cost in material science and shortening the research and development cycle.
+    In recent years, two-dimensional (2D) materials have attracted much attention because of their novel structure and excellent performance. The electron deficiency makes boron materials unable to stabilized through the classic 2c-2e bond. Boron compounds tend to form multi-centre bonds to meet the eight-electron rule, which leads to its rich structural diversity. Theoretical and experimental results show that the two-dimensional boron material can be stabilized on the metal substrate. The structures of borophenes are the triangular lattice with a certain proportion of hexagonal vacancies, and the specific distribution of vacancies influences the properties of the system. When boron and transition metal atoms form two-dimensional compounds, the structure and property of the compounds are related to the metal atoms. Consequently, the two-dimensional transition metal boron compounds have good application prospects and can be used as a candidate system to study new physical phenomena.
 
-Placing different elements at the lattice points of the lattice, expanding the superlattice from the original lattice and placing different elements at the lattice points can make all kinds of derived structures,
-However, there are a lot of equivalent configurations in these derived structures.
-The number of configurations increases sharply with the enlargement of the supercell volume, so it is difficult to select such a large number of configurations exclusively through simple geometric comparison between pairs of structures.
-We use the Hermite normal form(HNF) to represent the derived lattices, and by applying symmetry operation to the lattices, we can get the physical non-equivalent lattices in the superlattices with definite volume. For the fixed derived lattice, we index the lattice sites, and the subsequent symmetric operation of the space group to which the crystal belongs can be equivalent to a permutation operation of the indices. 
-At the same time, the HNF of different derived superlattices is combined to classify the superlattices with the same Smith normal form(SNF) into the same kind. The same kind of superlattices will have the same quotient group and therefore the same non-equivalent label order. 
-Since the number of SNF matrices is far less than that of HNF matrices, we can quickly exclude translation operations for a series of lattice with the same SNF matrices through this method, which effectively improves the efficiency.
-We use our own software to generate physically unequivalent derived structure, and provide users with a friendly command line and web interface.
+    Structural diversity is the source of rich properties of boron compounds, but it also makes it difficult to predict the configuration of boron compounds theoretically and synthesize them experimentally. The potential energy surface of boron compounds has a large number of local minimum values, which increases the difficulty of structure search. The existence of multi-centre bonds makes the potential function hard to construct and lack an efficient way to calculate the energy of compounds. Taking the two-dimensional titanium boride structure as an example, the high-throughput first-principles calculation based on structure recognition is carried out in this dissertation. We apply the biased screening method by using prior knowledge of the structures, and structural stability and properties of 2D titanium boride are studied.
 
-The rapid growth of computing power and the development of computing methods of large computers have played an important role in the development of computational materials science.
-However, these developments have also brought new challenges to the computation and management of massive amounts of data.
-The development of computing power makes the automation of processes and the scalability of data volumes and the quick query become important in high throughput computing.
-At the same time, when the amount of data becomes large, the process of data generation and acquisition becomes difficult to trace, which runs counter to the important principle of \textit{reproducible} in science.
-Therefore, in order to maintain the principles of (1) process automation, (2) easy expansion of data volume, (3) fast query of data, and (4) process reproducible,
-Scientists have developed many workflow and database tools. 
-AiiDA: a high-throughput infrastructure that simplifies and unifies client-side operations to cluster servers, provides a clear bookkeeping of the intermediate details and inputs and outputs of complex computing processes.
-I am responsible for updating the old concurrent library dependency of the engine, replacing and removing AiiDA's dependency on the third-party concurrent library \texttt{tornado} with library \texttt{asyncio} comprehensively, so that AiiDA can use the latest software dependency in the development process of plugins and so on.
+    We construct a series of initial configurations with structure generating method. 
+    The initial configuration can be distributed uniformly around the local minimum potential energy surface. The efficiency and accuracy are better than the unbiased screening method. In two-dimensional titanium boride, boron atoms tend to maintain a planar triangular grid. Different coordination numbers can appear in titanium atoms by introducing polygonal vacancies. In a given supercell, a variety of reasonable initial configurations were considered by removing the duplicated structures. We release the open-source package \textit{Structures of Alloy Generation And Recognition} (SAGAR) and own its software patent.
 
-In view of the structural generality of 2D boron materials, we believe that biased screening using the prior knowledge added to the structure is superior to unbiased screening using the global search algorithm. Considering that boron atoms in a two-dimensional boron material tend to maintain a planar triangular mesh structure containing vacancies, we use the structure check software to prioritize the construction of a relatively reasonable initial configuration, and make it as evenly distributed as possible in the initial configuration near the energy local minimum point in energy space. First-principles calculations are performed on all the generated structures to obtain accurate energy and properties.
-The structural stability and superconductivity properties of monolayer titanium-boron structures were investigated by using the non-equivalent structure generation tool SARGA combined with the high-throughput workflow tool AiiDA.
-Through this study, we have not only confirmed several previously reported monolayers of titanium-boron at different ratios, but also found a new \ce{TiB7} monolayer configuration with lower energy and excellent superconducting properties. 
-What needs to be emphasized is that, by adding prior structure information, the total number of structures generated and calculated by us is greatly reduced, compared with the number of structures involved in the global search algorithm. 
-The biased structure search method has simple logic and easier to combine with workflow tools for calculation management, with obtaining better results. 
-Therefore, we believe that for a specific kind material, which has fixed structural feature, it can be considered to use the method that combine non-duplicate structure generation with high-throughput technology to generate and screen the configuration, so as to quickly find the structure that meets the specified application.
+    The structural stability of 2D titanium boride was systematically studied and the calculations and results are managed by using AiiDA. We confirm the previously reported titanium boride monolayers and find that the \ce{TiB7} monolayer with space group ($Cmmm$) have lower energy. We emphasize that by adding prior structural knowledge, comparing to the global search algorithm the total number of structures generated and calculated is greatly reduced. The biased screening method has simple logic and is easier to combine with workflow tools for calculation management.
+
+    The superconductivity of \ce{TiB7}, \ce{TiB9} monolayer and the AB-stacking \ce{TiB7} bilayer are calculated and analyzed. The monolayer \ce{Tib7} has the largest superconducting transition temperature, \SI{8.3}{\kelvin}, and the superconducting transition temperature decreases with the increase of tensile stress. The superconducting temperature of AB-stacking \ce{TiB7} bilayer and \ce{TiB9} monolayer are \SI{5.5}{\kelvin} and \SI{1.2}{\kelvin}, respectively.
+
+    In searching two-dimensional titanium boride structures,  we use the prior knowledge related to materials and find that a biased screening method can effectively reduce the configuration search space, which saves the cost of computation remarkably. The efficient duplicated periodic structure removing method can extend to systems with specific structure patterns. It is easy to be combined with the high throughput workflow tools to calculate and analyze other systems.
+
 % 英文关键词。关键词之间用英文半角逗号隔开，末尾无符号。
-\englishkeywords{two-dimensional materials, boride, transition metal, high-throughput calculation, structure search}
+\englishkeywords{two-dimensional material; boride; high-throughput calculation; structure search; superconducting property}
 \end{englishabstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -285,15 +288,18 @@ Therefore, we believe that for a specific kind material, which has fixed structu
 % 使用下面语句手动关闭强制章节右(奇数页)起
 \csname @openrightfalse\endcsname
 
+% for Roman nomber font
+\newcommand*{\rom}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 学位论文的正文应以《绪论》作为第一章
 \input{chapters/introduction}
 
 \input{chapters/theory}
 
-\input{chapters/workflow}
-
 \input{chapters/unique}
+
+\input{chapters/workflow}
 
 \input{chapters/pccp}
 
@@ -301,17 +307,70 @@ Therefore, we believe that for a specific kind material, which has fixed structu
 % 学位论文的正文应以《结论》作为最后一章
 \begin{conclusion}\label{chapter_concludes}
 
-二维过渡金属硼化物因其结构和性质上的丰富多样性而备受研究关注，新颖的二维硼化物不但有广泛的应用前景，它还为新物理现象提供了很好的研究对象。之前的理论研究使用无偏的全局结构搜索算法发现了许多具有特殊性质的稳定二维过渡金属硼化物结构，但因为硼和过渡金属同时存在时极大丰富了结构的多样性，使得材料的理论预测需要耗费大量的计算资源。
-本文实现了一种高效的周期结构查重的方法，并将方法与现有的计算材料学的工作流工具结合，发展了对结构上有固定特征的化合物进行有偏的结构搜索的方法。
-在此基础上，结合第一性原理对这些结构进行高通量计算，探求单层钛硼结构的稳定性规律，得到不同钛硼比例下的可能的基态结构。本文的主要结论如下：
+% 二维过渡金属硼化物因其结构和性质上的丰富多样性而备受研究关注，新颖的二维硼化物不但有广泛的应用前景，
+% 它还为新物理现象提供了很好的研究对象。之前的理论研究使用无偏的全局结构搜索算法发现了许多具有特殊性质的稳定二维过渡金属硼化物结构，
+% 但因为硼和过渡金属同时存在时极大丰富了结构的多样性，使得材料的理论预测需要耗费大量的计算资源。
+二维硼化物结构多样，性能丰富，具有很好的应用前景。为了克服复杂势能面上结构搜索的困难，
+本文提出了一种高效的周期结构查重、快速生成合理结构的方法，与现有的高通量计算工作流程序结合，
+运用第一性原理方法对二维硼化钛结构进行了系统研究，并对稳定结构的超导电性进行了计算和分析。
+本文的主要内容总结如下： 
 
-一、介绍并实现了周期结构的查重和生成算法。周期性体系从原胞出发能够拓展出各种各样的衍生结构，这些衍生结构中存在大量的物理等价的构型。
-构型的总数随着超胞体积的扩大增加的非常迅速，我们通过使用厄米标准型矩阵来对表示衍生的晶格并作用晶格的对称操作后进行对比查重。针对固定的衍生晶格，我们对晶格位点进行了编号，后续的对称操作能够等价于对编号的置换操作。同时合并使用对不同的衍生的超晶格的HNF矩阵进一步划分归类，将具有相同的SNF矩阵的归为同类。同类超晶格可以有相同的商群，因而有相同的不等价的标号顺序。通过这个方法，我们能够快速的对一系列具有相同SNF矩阵的晶格排除平移操作。因此大大提高了查重效率。
-我们从实践上通过自己编写的软件实现了对这类衍生结构的查询，并向用户提供了友好的命令行以及网页端的接口来完成查重任务。
+一、介绍并实现了周期结构的查重和生成算法。
+我们通过使用厄米标准型矩阵来对表示衍生的晶格并作用晶格的对称操作后进行对比查重。
+针对固定的衍生晶格，我们对晶格位点进行了编号，后续的对称操作能够等价于对编号的置换操作。
+同时合并使用对不同的衍生的超晶格的HNF矩阵进一步划分归类，将具有相同的SNF矩阵的归为同类。
+同类超晶格可以有相同的商群，因而有相同的不等价的标号顺序。
+通过这个方法，我们能够快速的对一系列具有相同SNF矩阵的晶格排除平移操作。因此大大提高了查重效率。
+我们从实践上通过自己编写的软件实现了对这类衍生结构的查询，
+并向用户提供了友好的命令行以及网页端的接口来完成查重任务。
 
-二、介绍了本论文使用以及本人参与开发维护的高通量工具流工具AiiDA的架构设计。主要介绍了这一工具其内核架构上为了满足FAIR数据原则数据可重复性在数据可重用性上扮演了重要的作用，所采用的设计和实现。在高通量计算材料学的研究中使用该工具，能够大大减少科研人员在操作上的时间成本，并使得原来难以管理的海量数据得到很好的整合和管理，方便在将来容易地对结果进行分析，以及将结果与其他研究者分享。
+二、使用固定晶胞下晶格的查重，
+我们对部分氟化石墨烯的构型进行了预测，
+揭示了实验上F-graphene/Si器件有较宽的频率带宽的原因。
+另外我们加入先验的金属嵌入的硼平面结构上的限制，
+使用晶胞查重和构型查重，
+有偏地对各个配比的单层\ce{TiB}结构生成大量处在势能面局域极小值附近的初始构型，
+这些构型中存在多种不同的钛原子配位环境。
 
-三、综合以上的方法和工具对钛硼单层结构基于特定结构上的特征，加入先验的结构上的限制，有偏地对各个配比的单层钛硼结构生成大量处在势能面局域极小值附近的初始构型。之后进行结构的优化和能量的评定，从而挑选出各个配比下能量较优的构型进行进一步的性质的探索。我们主要对\ce{TiB7}最稳定的构型进行了超导性质的计算，认为它有很好的超导性质。使用相同的方法，我们希望可以在未来的研究工作中将体系拓展到夹层结构以及多层结构，甚至相同的方法和流程能够适用于有特定结构特征的三维体相结构的生成和搜索。方法本身相比成熟的全局搜索算法在结构有特定特征时搜索的构型空间更小，从而大大节约了计算成本，并且由于该方法逻辑上简洁明了只需要一步来生成所有候选构型，使得该方法能够容易地使用高通量工具流工具和后续的性质计算连接，以进行更多复杂的性质方面的分析和计算。
+三、详细介绍了本论文使用的高通量工具流工具AiiDA的架构设计。
+在高通量计算材料学的研究中使用该工具，能够大大减少科研人员在操作上的时间成本，
+并使得原来难以管理的海量数据得到很好的整合和管理，方便在将来容易地对结果进行分析，以及将结果与其他研究者分享。
+使用这个工具，我们对海量的单层\ce{TiB}构型进行结构的优化和能量的评定，
+从而挑选出各个配比下能量较优的构型进行进一步的性质的探索。
+使用结构生成和查重结合高通量计算的方法，
+我们确认了已经被理论文章所报导的\ce{TiB4}和\ce{TiB9}结构，
+证明了我们所采用的方法的可靠性。
+此外，我们还发现了结构与文献报导类似但对称性不同且形成能更低的\ce{TiB7}结构，
+和一系列其他化学配比的\ce{TiB}单层构型。
+
+四、我们对该最稳定的单层\ce{TiB7}构型，单层\ce{TiB9}构型，
+以及由单层\ce{TiB7}构型通过AB方式堆叠而成的双层\ce{TiB7}构型，
+进行了超导电性的计算和分析。
+在不施加应力时，单层\ce{TiB7}构型的超导转变温度为\SI{8.3}{\kelvin}，
+高于文献报导的锂沉积石墨烯的超导转变温度\SI{8.1}{\kelvin}。
+\ce{TiB7}的超导电性主要是由硼元素所贡献，主要来自$\Gamma$点附件低频率范围的四种振动模式对电声耦合的贡献。
+通过对该构型施加拉伸应变，我们发现超导转变温度随之减小。
+进一步，可以将该单层\ce{TiB7}通过AB堆叠构成的双层\ce{TiB7}构型，
+该双层\ce{TiB7}构型也具有超导电性，
+超导转变温度为\SI{5.5}{\kelvin}。
+
+在未来的研究工作中，我们希望可以使用相同的方法将体系拓展到夹层结构以及多层结构，
+并逐步发展和完善方法，使其能够适用于有特定结构特征的三维体相结构的生成和搜索。
+相对于成熟的全局搜索算法，我们的方法在结构有特定特征时搜索的构型空间更小，可以有效节约计算成本。
+该方法逻辑上简洁明了，一次性可生成所有候选构型，
+能够容易地使用高通量工具流工具和后续的性质计算连接，
+以进行更多复杂的性质方面的分析和计算。
+
+% 本论文综合介绍了这样一种结构搜索方法，即
+% 对于特定类型化合物，基于已有的结构特征有偏向性地在势能面中构造大量靠近能量
+% 处于局域极小值点附近的初始构型。再对这些构型进行流程固定的高通量第一性原理计算，
+% 从而得到目标结构或目标性质。这是一种相对普适的结构搜索方法，其不仅限于
+% 用在本论文所描述的研究对象，即结构多样性丰富的单层过渡金属硼化物的结构预测中。
+% 在未来的工作中，
+% 我们希望类似方法还能够快速地拓展到：（1）多层或夹层结构的二维硼化钛的结构预测，
+% （2）其他二维过渡金属硼化物的结构预测，
+% （3）有特定结构特征的体相功能材料（如大部分实验发现的硫属非线性光学材料都可看作是闪锌矿结构或纤锌矿结构的衍生构型）
+% 的结构预测。使得新材料的预测能够更加快速且更加节约计算资源。
 
 \end{conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -319,25 +378,56 @@ Therefore, we believe that for a specific kind material, which has fixed structu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % 作者简历与科研成果页，应放在backmatter之后
 \begin{resume}
-% 论文作者身份简介，一句话即可。
+\noindent 一、已发表（包括已接受待发表）的论文，以及已投稿、或已成文打算投稿、或拟成文投稿的论文情况（{\textbf{只填写与学位论文内容相关的部分}}）：
 
-% 论文作者在攻读学位期间所发表的文章的列表，按发表日期从近到远排列。
-\begin{publications}
-\item Xiaobao Wei, Jinnan Chen, ``Voting-on-Grid Clustering for Secure
-  Localization in Wireless Sensor Networks,'' in \textsl{Proc. IEEE International
-    Conference on Communications (ICC) 2010}, May. 2010.
-\item Xiaobao Wei, Shiba Mao, Jinnan Chen, ``Protecting Source Location Privacy
-  in Wireless Sensor Networks with Data Aggregation,'' in \textsl{Proc. 6th
-    International Conference on Ubiquitous Intelligence and Computing (UIC)
-    2009}, Oct. 2009.
-\end{publications}
-% 论文作者在攻读学位期间参与的科研课题的列表，按照日期从近到远排列。
-\begin{projects}
-\item 国家自然科学基金面上项目``无线传感器网络在知识获取过程中的若干安全问题研究''
-（课题年限~2010年1月 --- 2012年12月），负责位置相关安全问题的研究。
-\item 江苏省知识创新工程重要方向项目下属课题``下一代移动通信安全机制研究''
-（课题年限~2010年1月 --- 2010年12月），负责LTE/SAE认证相关的安全问题研究。
-\end{projects}
+\begin{adjustbox}{center}
+  \aboverulesep=0ex
+  \belowrulesep=0ex
+  \renewcommand{\arraystretch}{1.1}
+% \begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2mm}|p{28mm}|p{50mm}|p{24mm}|p{20mm}|p{16mm}|p{10mm}|}
+      \toprule
+      \textbf{序号} & \textbf{作者（全体作者，按顺序排列）} & \textbf{题目} & \textbf{发表或投稿刊物名称、级别} & \textbf{发表的卷期、年月、页码} & \textbf{相当于学位论文的哪一部分（章、节} & \textbf{被索引收录情况}\\
+      \midrule
+        1 & Martin Uhrin, Sebastiaan Huber, {\textbf{Jusong Yu}}, Nicola Marzari, Giovanni Pizz & \href{https://doi.org/10.1016/j.commatsci.2020.110086}{Workflows in AiiDA: Engineering a high-throughput, event-based engine for robust and modular computational workflows} & Computational Materials Science & 187(2021) 110086 & 第4章 & SCI \\
+        \midrule
+        2 & {\textbf{Jusong Yu}}, Jihai Liao, Yujun Zhao, Xiaobao Yang & \href{https://doi.org/10.1039/D0CP01540G}{Motif based high-throughput structure prediction of superconducting monolayer titanium boride} & Physical Chemistry Chemical Physics & 22(28), 16236-16243 & 第3.5节，第4.3节，第5章 & SCI \\
+        \midrule
+        3 & Jiyu Xu, {\textbf{Jusong Yu}} (共同第一), Jihai Liao, Xiaobao Yang, Chunyan Wu, Yi Wang, Li Wang, Chao Xie, Linbao Luo & \href{https://doi.org/10.1021/acsami.9b04389}{Opening the Band Gap of Graphene via Fluorination for High-Performance Dual-Mode Photodetector Application} & ACS applied materials \& interfaces & 11(24), 21702-21710 & 第3章，第3.4节 & SCI \\
+      \bottomrule
+    \end{tabular}
+% \end{table}
+\end{adjustbox}
+
+\noindent 注：在“发表的卷期、年月、页码”栏：
+\begin{enumerate}
+  \item 如果论文已发表，请填写发表的卷期、年月、页码；
+  \item 如果论文已被接受，填写将要发表的卷期、年月；
+  \item 以上都不是，请据实填写“已投稿”，“拟投稿”。
+\end{enumerate}
+不够请另加页。
+
+\vspace{2mm}
+
+\noindent 二、与学位内容相关的其它成果（包括专利、著作、获奖项目等）:
+
+\begin{adjustbox}{center}
+  \aboverulesep=0ex
+  \belowrulesep=0ex
+  \renewcommand{\arraystretch}{1.1}
+% \begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2mm}|p{36mm}|p{36mm}|p{24mm}|p{30mm}|p{16mm}|p{16mm}|}
+      \toprule
+      \textbf{序号} & \textbf{作者（全体作者，按顺序排列）} & \textbf{专利名称} & \textbf{证书编号} & \textbf{登记号} & \textbf{证书颁发日期} & \textbf{相当于学位论文的哪一部分（章、节} \\
+      \midrule
+        1 & 杨小宝(导师), {\textbf{余桔颂}}, 何长春, 丘绍斌, 廖继海, 赵宇军 & 合金候选结构生成和查重软件[简称:SAGAR]V1.0 & 软著登字第3642310号 & 2019SR0221533 & 2019年3月7日 & 第3章 \\
+      \bottomrule
+    \end{tabular}
+% \end{table}
+\end{adjustbox}
+
 \end{resume}
 
 % 致谢，应放在《结论》之后
@@ -346,15 +436,13 @@ Therefore, we believe that for a specific kind material, which has fixed structu
 
   首先要感谢我的爱人季舒瑶在我慌乱时对我的关心和包容，在我意志消沉时对我的鼓励和安慰，没有她的陪伴我想我很难在压力下坚持下来。还要感谢我的女儿余点，她的出生让我重新负担起责任，规律自己的生活，从内心让自己努力快乐起来并用力地坚持下去。她们曾经是，现在是，未来也还会是我生命中最最明亮温暖的光，保护我，引导我，激励着我成为能够独当一面的勇敢的人。要感谢我的爸爸和妈妈，他们总是在我最需要帮助的时候出现在我的身边，让我不需要为生活所发愁，让我能够无所畏惧地做自己喜欢的事情。
 
-  感谢赵宇军教授在我读博期间对我科研上的指导，赵老师知识渊博、关心同学的生活，经常鼓励我们去参加各种学术交流会议，给我们创造了一个非常优越的科研生活环境。赵老师豁达的人生态度值得我永久学习！
+  感谢赵宇军教授在我读博期间对我科研上的指导，赵老师知识渊博、关心同学的生活，经常鼓励我们去参加各种学术交流会议，给我们创造了一个非常优越的科研生活环境。
 
-  特别要感谢我的指导老师杨小宝教授，他对科研的热爱，对问题的执着都是我的榜样。杨老师的勤奋专注的态度让我敬佩，几乎周一到周日每一天杨老师都会早早到办公室来，很多时候都比我们这些学生要来的早，他来到办公室后亲自指导我们遇到的各种科研问题，有时即便是很细小的问题，他也亲自指导。在教学和科研上，杨老师治学态度非常严谨，对待工作认真负责，很多事情都是亲力亲为；在生活上，杨老师为人谦和、心态积极乐观，关心帮助实验室的成员；再回首，方觉与杨老师相处的点点滴滴都弥足珍贵，这四年跟随杨老师学习的经历，早已深深影响了我，而杨老师对科研和生活的态度更值得我终生学习。在此衷心感谢杨老师多年来的辛勤培养，我更愿意把这一段经历看做一份无价的礼物，值得我永远珍藏！
+  特别要感谢我的指导老师杨小宝教授，对我的研究方向做出了指导性的意见和建议，在论文撰写过程中及时对我遇到的困难和疑惑给予悉心指点，提出了许多有益的改进性意见，投入了大量的心血和精力。
 
-  还要特别感谢廖继海老师在我科研中细致的帮助，是您当初对我进行了很多基础指导，而且经常与我们讨论学术问题，您积极的帮助我们每一位学生的生活和科研，让我非常敬佩。
+  还要特别感谢廖继海老师在我科研中细致的帮助，是您当初对我进行了很多基础指导，而且经常与我们讨论学术问题。
 
   感谢姚尧老师，您深厚的学术功底让我深感钦佩，聆听您的报告帮我开阔了视野。
-  感谢陈丽娟老师，跟您相处的时光总是觉得非常愉快，您为我们课题组奉献了很多，处理日常事务、组织活动等等，谢谢您这些年的无私付出。
-  感谢程运华老师，大家每次跟您聊天都非常愉快，您广博的知识与幽默的态度给我留下了深刻的印象。
 
   同时感谢课题组实验室丘绍斌同学、何长春同学、曾佳锐同学、谢文强同学、林嘉懿同学、刘璐同学、黄梦霞同学、陈婉昱同学、王昭毅同学、邓小林同学、张海山同学、滕强同学、袁澍荣同学、陈仲佳同学、曹志鹏同学、杨淑青同学、黄家晴同学、吴亚楠同学、赵雪钰同学、王云鹏同学、莫一杰同学、卢智伟同学，你们为我的求学生涯增加了更多丰富的色彩，也从你们身上学到了很多东西！
 

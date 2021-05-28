@@ -434,7 +434,7 @@
             {\chaptertitlename}{1em}{}
 \titlespacing{\chapter}
              {0pt}
-             {*2.5}
+             {*-2}
              {*2.5}
 \titleformat{\section}[hang]
             {\zihao{-3}\bfseries}
@@ -481,12 +481,12 @@
 \captionsetup[figure]{position=below}
 \floatstyle{plaintop}
 \restylefloat{table}
-\renewcommand*{\baselinestretch}{1.38}
+\renewcommand*{\baselinestretch}{1.48}
 \let\njut@oldtabular\tabular
 \let\njut@endoldtabular\endtabular
 \renewenvironment{tabular}%
 {\bgroup%
-\renewcommand{\arraystretch}{1.38}%
+\renewcommand{\arraystretch}{1.48}%
 \njut@oldtabular}%
 {\njut@endoldtabular\egroup}
 \geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
@@ -601,12 +601,17 @@
   % 需要额外的一个括号把pagestyle限制在该部分
   {
     \pagestyle{plain} % Both header and footer are empty.
+    \pdfbookmark[0]{\contentsname}{contentsname}
+    \vspace{3mm}
+    \vspace{5mm}
+    {\begin{center}
+      {\heiti\zihao{-3}\contentsname}
+    \end{center}}
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
       \@restonecolfalse
     \fi
-    \nchapter{\contentsname}%
     \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
     \@starttoc{toc}%
     \if@restonecol\twocolumn\fi
@@ -780,7 +785,7 @@
            {\CJKunderline{\makebox[#1]{#2}}}
 \def\njutunderline{\@ifnextchar[\njut@underline\CJKunderline}
 \newcommand*{\makenlctitle}{%
-  \thispagestyle{plain} % Both header and footer are empty.
+  \thispagestyle{empty} % Both header and footer are empty.
   \pdfbookmark[0]{\njut@cap@nlc}{nlc}
   {\heiti\zihao{4}
     \noindent\makebox[40pt][l]{\njut@cap@nlc@classification}
@@ -922,13 +927,8 @@
   \renewcommand{\njut@value@abstract@titleb}{#1}%
 }
 \newenvironment{abstract}{%
-  \thispagestyle{plain}
-  \pdfbookmark[0]{\njut@cap@abstract}{abstract}
-  \vspace{3mm}
-  \vspace{5mm}
-  \begin{center}
-    {\heiti\zihao{-3}\njut@cap@abstract@abstractname}
-  \end{center}%
+  \pagestyle{plain}
+  \nchapter{\njut@cap@abstract@abstractname}
   \normalsize\par%
 }{%
   \cleardoublepage
@@ -945,12 +945,8 @@
   \renewcommand{\njut@value@abstract@en@titleb}{#1}%
 }
 \newenvironment{englishabstract}{%
-  \thispagestyle{plain}
-  \pdfbookmark[0]{\njut@cap@abstract@en}{englishabstract}
-  \vspace{5mm}
-  \begin{center}
-    {\bf\zihao{-3}\njut@cap@abstract@en@abstractname}
-  \end{center}%
+  \pagestyle{plain}
+  \nchapter{\njut@cap@abstract@en@abstractname}
   \normalsize\par%
 }{%
   \cleardoublepage

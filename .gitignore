@@ -4,8 +4,10 @@
 *.lof
 *.out
 *.lot
-*.pdf
 *.toc
 *.hd
 *.log
+*.fls
 .DS_Store
+*.fdb_latexmk
+main.fdb_latexmk

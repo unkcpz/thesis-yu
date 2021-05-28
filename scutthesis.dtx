@@ -2542,7 +2542,7 @@ December\fi
             {\chaptertitlename}{1em}{}
 \titlespacing{\chapter}
              {0pt}
-             {*2.5}
+             {*-2}
              {*2.5}
 \titleformat{\section}[hang]
             {\zihao{-3}\bfseries}
@@ -2622,7 +2622,7 @@ December\fi
 % 而这样定义之后，对不同尺寸的字体都会按同样的比例因子1.38放大行间距，使得全文排
 % 版能协调一致。
 %    \begin{macrocode}
-\renewcommand*{\baselinestretch}{1.38}
+\renewcommand*{\baselinestretch}{1.48}
 %    \end{macrocode}
 %
 % 修改|tabular|环境，设置表格中的行间距为正文行间距。
@@ -2631,7 +2631,7 @@ December\fi
 \let\njut@endoldtabular\endtabular
 \renewenvironment{tabular}%
 {\bgroup%
-\renewcommand{\arraystretch}{1.38}%
+\renewcommand{\arraystretch}{1.48}%
 \njut@oldtabular}%
 {\njut@endoldtabular\egroup}
 %    \end{macrocode}
@@ -2900,12 +2900,17 @@ December\fi
   % 需要额外的一个括号把pagestyle限制在该部分
   {
     \pagestyle{plain} % Both header and footer are empty.
+    \pdfbookmark[0]{\contentsname}{contentsname}
+    \vspace{3mm}
+    \vspace{5mm}
+    {\begin{center}
+      {\heiti\zihao{-3}\contentsname}
+    \end{center}}
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
       \@restonecolfalse
     \fi
-    \nchapter{\contentsname}%
     \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
     \@starttoc{toc}%
     \if@restonecol\twocolumn\fi
@@ -3154,7 +3159,7 @@ December\fi
 % 无页眉页脚的空白页。
 %    \begin{macrocode}
 \newcommand*{\makenlctitle}{%
-  \thispagestyle{plain} % Both header and footer are empty.
+  \thispagestyle{empty} % Both header and footer are empty.
   \pdfbookmark[0]{\njut@cap@nlc}{nlc}
   {\heiti\zihao{4}
     \noindent\makebox[40pt][l]{\njut@cap@nlc@classification}
@@ -3332,13 +3337,8 @@ December\fi
 % \cs{cleardoublepage}命令来插入无页眉页脚的空白页。
 %    \begin{macrocode}
 \newenvironment{abstract}{%
-  \thispagestyle{plain}
-  \pdfbookmark[0]{\njut@cap@abstract}{abstract}
-  \vspace{3mm}
-  \vspace{5mm}
-  \begin{center}
-    {\heiti\zihao{-3}\njut@cap@abstract@abstractname}
-  \end{center}%
+  \pagestyle{plain}
+  \nchapter{\njut@cap@abstract@abstractname}
   \normalsize\par%
 }{%
   \cleardoublepage
@@ -3381,12 +3381,8 @@ December\fi
 % \cs{cleardoublepage}命令来插入无页眉页脚的空白页。
 %    \begin{macrocode}
 \newenvironment{englishabstract}{%
-  \thispagestyle{plain}
-  \pdfbookmark[0]{\njut@cap@abstract@en}{englishabstract}
-  \vspace{5mm}
-  \begin{center}
-    {\bf\zihao{-3}\njut@cap@abstract@en@abstractname}
-  \end{center}%
+  \pagestyle{plain}
+  \nchapter{\njut@cap@abstract@en@abstractname}
   \normalsize\par%
 }{%
   \cleardoublepage
